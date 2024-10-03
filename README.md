@@ -79,70 +79,66 @@ git clone https://github.com/medic-assist/application-mobile.git
 Ouvrez le projet dans Android Studio et assurez-vous que toutes les dépendances sont correctement installées.
 
 Compilez et exécutez l'application sur un émulateur ou un appareil physique.
-3. Configuration de la base de données PostgreSQL
 
-Créez une base de données PostgreSQL pour l'application.
 
-sql
-
-CREATE DATABASE medic_assist_db;
-
-Appliquez les migrations si nécessaire pour configurer les tables.
-
-bash
-
-npm run migrate
-
-Fonctionnalités techniques
-Suivi de la localisation du patient
+## Fonctionnalités techniques
+### Suivi de la localisation du patient
 
     Utilisation des services de géolocalisation pour suivre les déplacements du patient entre son domicile et le lieu du rendez-vous.
     Notifications envoyées automatiquement lors des étapes clés (départ, arrivée à l'hôpital, etc.).
 
-Gestion des bulles et des rendez-vous
+### Gestion des bulles et des rendez-vous
 
     Création automatique d'une "bulle" pour chaque acte médical, regroupant le patient, les médecins, et d'autres acteurs pertinents.
     Notifications de retard basées sur une estimation du temps de trajet (calculée via OpenStreetMap ou une API tierce).
 
-Notifications automatiques
+### Notifications automatiques
 
     Notification des membres de la bulle pour chaque étape clé du déplacement du patient.
     Estimation de retard basée sur le temps de trajet moyen et l'heure de départ prévue.
 
-Simulation des plannings médicaux
+### Simulation des plannings médicaux
 
     Implémentation de deux services médicaux (Scanner et Consultation de suivi) avec des équipes médicales associées.
     Simulation de la présence médicale pour chaque type de rendez-vous.
 
-Points d'attention
+### Points d'attention
 
     Optimisation des notifications pour éviter de notifier les membres non concernés.
     Utilisation d'API tierces (comme OpenStreetMap) pour la conversion des adresses en coordonnées géographiques.
     Gestion de la confidentialité et de la sécurité des données patient via des normes de sécurité strictes.
 
-Technologies utilisées
+### Technologies utilisées
 
     Kotlin : pour le développement de l'application mobile Android.
     Node.js & Express : pour l'API backend.
     PostgreSQL : pour le stockage des données.
+    Docker & Docker Compose : pour la gestion des conteneurs de l'API et de la base de données.
     OpenStreetMap API : pour la géolocalisation.
     Waze API : pour l'estimation du temps de trajet et des retards.
 
-Déploiement
-API Backend
+## Déploiement
+### API Backend
 
-Vous pouvez déployer l'API sur un service comme Heroku, AWS ou tout autre service cloud supportant Node.js. Assurez-vous que la base de données PostgreSQL est correctement connectée.
-Application mobile
+L'API backend et la base de données peuvent être déployées sur tout environnement supportant Docker, comme AWS, DigitalOcean, ou Heroku. Vous pouvez aussi utiliser des services managés pour PostgreSQL.
 
+### Application mobile
 Distribuez l'application via Google Play ou un autre service de déploiement d'applications mobiles. N'oubliez pas de configurer les clés API pour la géolocalisation dans la version de production.
-Auteurs
 
-    Nom de l'auteur 1 - Développeur backend
-    Nom de l'auteur 2 - Développeur mobile
-    Nom de l'auteur 3 - Architecte de base de données
 
-License
+## Auteurs
 
-Ce projet est sous licence MIT.
+
+Hett Alizée @dinholu - Développeur Fullstack, développeur mobile, cheffe de projet
+Beaudeux Charline @charlineBx - Développeur mobile, développeur fullstack, Analyste
+Baudry Baptiste @BdryBaptiste = Développeur mobile, développeur fullstack
+Remy Nicolas @CFAI-Nicolas - Développeur mobile
+Blaess Maxime @Koumaq - Développeur mobile
+Brisson Jordan @LeSupaPoney - Développeur mobile, développeur front
+Berard Ludovic @LudoPilot - Développeur fullstack
+Shafizadeh Rashti Raha @@raha-sh - Développeur mobile, développeur fullstack, Analyste
+
+
+
 
 rust
