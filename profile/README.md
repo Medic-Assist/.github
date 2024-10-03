@@ -128,13 +128,12 @@ Distribuez l'application via Google Play ou un autre service de déploiement d'a
 
 ## Auteurs
 
-
-Hett Alizée @dinholu - Développeur Fullstack, développeur mobile, cheffe de projet
-Beaudeux Charline @charlineBx - Développeur mobile, développeur fullstack, Analyste
-Baudry Baptiste @BdryBaptiste = Développeur mobile, développeur fullstack
-Remy Nicolas @CFAI-Nicolas - Développeur mobile
-Blaess Maxime @Koumaq - Développeur mobile
-Brisson Jordan @LeSupaPoney - Développeur mobile, développeur front
-Berard Ludovic @LudoPilot - Développeur fullstack
-Shafizadeh Rashti Raha @@raha-sh - Développeur mobile, développeur fullstack, Analyste
+- Hett Alizée @dinholu - Développeur Fullstack, développeur mobile, cheffe de projet
+- Beaudeux Charline @charlineBx - Développeur mobile, développeur fullstack, Analyste
+- Baudry Baptiste @BdryBaptiste = Développeur mobile, développeur fullstack
+- Remy Nicolas @CFAI-Nicolas - Développeur mobile
+- Blaess Maxime @Koumaq - Développeur mobile
+- Brisson Jordan @LeSupaPoney - Développeur mobile, développeur front
+- Berard Ludovic @LudoPilot - Développeur fullstack
+- Shafizadeh Rashti Raha @raha-sh - Développeur mobile, développeur fullstack, Analyste
 
